@@ -1,0 +1,115 @@
+.contacts {
+    padding: 0 15px;
+
+    &__inner {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 45px;
+        margin: 0 auto;
+        border: 1px solid $card-content-border;
+
+    }
+
+    &__item {
+        flex: 0 1 300px;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__sub-title {
+        font-family: $font-title;
+        font-size: 20px;
+        color: $h3-clr;
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        width: 100%;
+
+        .contacts__messager {
+            display: none;
+        }
+    }
+
+    &__address-item {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 16px;
+
+        &:not(:last-child) {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__icon-address {
+        flex-shrink: 0;
+        fill: $blue-500;
+    }
+
+    &__messager {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+
+    &__messager-item {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #D9D9D9;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: center;
+        transition: outline 0.5s, transform 0.5s, background-color 0.5s;
+
+        &:hover {
+            background-color: darken($white, 10);
+        }
+
+        &:focus {
+            outline: 1px solid $blue-800;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .contacts {
+        &__inner {}
+
+        &__address {
+            width: 100%;
+
+            .contacts__messager {
+                display: flex;
+            }
+        }
+
+        &__item--messager {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .contacts {
+        &__inner {
+            padding: 20px;
+        }
+    }
+}

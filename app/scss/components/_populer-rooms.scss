@@ -1,0 +1,134 @@
+.populer-rooms {
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__section-description {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+}
+
+.card-room {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+
+    &__image {
+        display: block;
+        background-color: $card-content-border;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $card-content-border;
+        border-top: none;
+        padding: 20px;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 600;
+        color: $h3-clr;
+        margin-bottom: 13px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 17px;
+        row-gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__info-icon {
+        fill: $black;
+    }
+
+    &__price {
+        font-family: $font-title;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: auto;
+    }
+
+    &__price-value {
+        font-size: 24px;
+        font-weight: 600;
+        color: $blue-800;
+    }
+}
+
+@media(max-width: 768px) {
+    .card-room {
+        &__img {
+            height: 200px;
+        }
+
+        &__body {
+            padding: 15px 20px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__info {
+            font-size: 16px;
+        }
+
+        &__price {
+            font-size: 16px;
+        }
+
+        &__price-value {
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .populer-rooms {
+        &__heading {
+            margin-bottom: 35px;
+        }
+
+        &__section-description {
+            font-size: 16px;
+        }
+    }
+
+}

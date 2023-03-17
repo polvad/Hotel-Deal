@@ -1,0 +1,132 @@
+.check {
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__section-description {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        min-height: 520px;
+        display: flex;
+        background-color: $blue-100;
+        border-radius: 0 8px 8px 0;
+    }
+
+    &__image {
+        flex: 1 1 637px;
+        display: flex;
+        align-items: flex-end;
+        padding-top: 20px;
+        background-color: #B1BED0;
+        box-shadow: 0 4px 79px 7px rgba(115, 115, 115, 0.12);
+        border-radius: 8px 0 0 8px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    &__form {
+        flex: 1 1 470px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 68px;
+    }
+
+    &__name-input {
+        display: block;
+        font-size: 14px;
+        color: $h3-clr;
+        margin-bottom: 10px;
+    }
+
+    &__field {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        border: 1px solid #ABABAB;
+        border-radius: 2px;
+    }
+
+    &__submit {
+        font-family: $font-title;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: $h3-clr;
+        text-transform: uppercase;
+        padding: 17px;
+        border: 2px solid $card-content-border;
+        background-color: $white;
+        transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+
+        &:hover {
+            background-color: darken($white, 10);
+        }
+
+        &:focus {
+            transform: scale(0.98);
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .check {
+        &__form {
+            padding: 20px 45px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .check {
+        &__inner {
+            display: block;
+        }
+
+        &__image {
+            border-radius: 0;
+        }
+
+        &__form {
+            padding: 20px 45px;
+            gap: 15px;
+        }
+
+        &__field {
+            padding: 8px;
+        }
+
+        &__submit {
+            padding: 10px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .check {
+        &__heading {
+            margin-bottom: 35px;
+        }
+
+        &__title {}
+
+        &__section-description {
+            font-size: 16px;
+        }
+    }
+}

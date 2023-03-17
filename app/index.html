@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Deal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Merriweather:wght@300&family=Open+Sans:wght@300;400;600;700&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="./images/logo.png" width="30" height="46" alt="logo">
+                <span class="logo__text">hotel</span>
+            </a>
+            <nav class="header__nav">
+                <button class="header__burger" type="button">
+                    <span class="sr-only">open menu</span>
+                    <span class="header__burger-line"></span>
+                </button>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#">Home</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Branch</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Search</a></li>
+                    <li class="header__item"><a class="header__link" href="#">About Us</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Pages</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <button class="btn header__reservation" type="button">
+                <span>Reservation</span>
+                <svg class="header__reservation-icon" width="15" height="15">
+                    <use xlink:href="./images/sprite.svg#icon-reservation"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+        <main class="main">
+            <section class="hero section">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title title">
+                    Discover a hotel that defies a new dimension of luxury.
+                </h1>
+                <p class="hero__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy.
+                </p>
+                <div class="hero__btns">
+                    <a class="hero__link-started btn" href="#">Get Started</a>
+                    <a class="hero__link-watch btn-play" href="#">
+                        <span class="btn-play__circel-play">
+                            <svg class="btn-play__icon-play" width="12" height="20">
+                                <use xlink:href="./images/sprite.svg#icon-play"></use>
+                            </svg>
+                        </span>
+                        Watch video
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <span class="hero__image-circel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <img class="hero__build" src="./images/build.jpg" width="320" height="559" alt="build">
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="check section">
+    <div class="container">
+        <div class="check__heading">
+            <h1 class="check__title title">Check Availability</h1>
+            <p class="check__section-description">
+                It is a long established fact that a reader will be distracted by the readable content of a page.
+            </p>
+        </div>
+        <div class="check__inner">
+            <div class="check__image">
+                <img class="check__img" src="./images/check.png"  alt="img">
+            </div>
+            <form class="check__form">
+                <label class="check__label">
+                    <span class="check__name-input">CHECK-IN</span>
+                    <input class="check__field" type="date">
+                </label>
+                <label class="check__label">
+                    <span class="check__name-input">CHECK-OUT</span>
+                    <input class="check__field" type="date">
+                </label>
+                <label class="check__label">
+                    <span class="check__name-input">GUESTS:</span>
+                    <select class="check__field">
+                        <option value="">1 Room</option>
+                        <option value="">2 Room</option>
+                        <option value="">3 Room</option>
+                    </select>
+                </label>
+                <button class="check__submit" type="submit">check availability</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+            <section class="populer-rooms section">
+    <div class="container">
+        <div class="populer-rooms__heading">
+            <h2 class="populer-rooms__title title">Our Most Populer Room</h2>
+            <p class="populer-rooms__section-description">
+                It is a long established fact that a reader will be distracted by the readable content of a page.
+            </p>
+        </div>
+        <div class="populer-rooms__cards">
+            <article class="card-room">
+                <a class="card-room__image" href="#">
+                    <img class="card-room__img" src="./images/room/deluxe.jpg" width="350" height="254" alt="img">
+                </a>
+                <div class="card-room__body">
+                    <h3 class="card-room__title">
+                        <a href="#">Deluxe Contrast Room</a>
+                    </h3>
+                    <div class="card-room__info">
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="12" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-size"></use>
+                            </svg>
+                            52 sqm
+                        </span>
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="18" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-bed"></use>
+                            </svg>
+                            2 Bed
+                        </span>
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="18" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-bathroom"></use>
+                            </svg>
+                            1 Bathroom
+                        </span>
+                    </div>
+                    <div class="card-room__price">
+                        <span class="card-room__price-value">$200</span>
+                        / Night
+                    </div>
+                </div>
+            </article>
+            <article class="card-room">
+                <a class="card-room__image" href="#">
+                    <img class="card-room__img" src="./images/room/luxery.jpg" width="350" height="254" alt="img">
+                </a>
+                <div class="card-room__body">
+                    <h3 class="card-room__title">
+                        <a href="#">Luxery Twin Room</a>
+                    </h3>
+                    <div class="card-room__info">
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="12" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-size"></use>
+                            </svg>
+                            52 sqm
+                        </span>
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="18" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-bed"></use>
+                            </svg>
+                            2 Bed
+                        </span>
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="18" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-bathroom"></use>
+                            </svg>
+                            1 Bathroom
+                        </span>
+                    </div>
+                    <div class="card-room__price">
+                        <span class="card-room__price-value">$250</span>
+                        / Night
+                    </div>
+                </div>
+            </article>
+            <article class="card-room">
+                <a class="card-room__image" href="#">
+                    <img class="card-room__img" src="./images/room/single.jpg" width="350" height="254" alt="img">
+                </a>
+                <div class="card-room__body">
+                    <h3 class="card-room__title">
+                        <a href="#">Deluxe Contrast Room</a>
+                    </h3>
+                    <div class="card-room__info">
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="12" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-size"></use>
+                            </svg>
+                            52 sqm
+                        </span>
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="18" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-bed"></use>
+                            </svg>
+                            2 Bed
+                        </span>
+                        <span class="card-room__info-item">
+                            <svg class="card-room__info-icon" width="18" height="12">
+                                <use xlink:href="./images/sprite.svg#icon-bathroom"></use>
+                            </svg>
+                            1 Bathroom
+                        </span>
+                    </div>
+                    <div class="card-room__price">
+                        <span class="card-room__price-value">$280</span>
+                        / Night
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+            <section class="services section">
+    <div class="container">
+        <div class="services__heading">
+            <p class="services__section-description">our services</p>
+            <h2 class="services__title title">Hotel Facilities</h2>
+        </div>
+        <ul class="services__list">
+            <li class="services__item">
+                <div class="services__top">
+                    <h3 class="services__sub-title">Pick up & Drop</h3>
+                    <svg class="services__icon" width="55" height="53">
+                        <use xlink:href="./images/sprite.svg#icon-pick"></use>
+                    </svg>
+                </div>
+                <p class="services__text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page.
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__top">
+                    <h3 class="services__sub-title">Parking Space</h3>
+                    <svg class="services__icon" width="55" height="50">
+                        <use xlink:href="./images/sprite.svg#icon-parking"></use>
+                    </svg>
+                </div>
+                <p class="services__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__top">
+                    <h3 class="services__sub-title">Room Services</h3>
+                    <svg class="services__icon" width="55" height="50">
+                        <use xlink:href="./images/sprite.svg#icon-service"></use>
+                    </svg>
+                </div>
+                <p class="services__text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page.
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__top">
+                    <h3 class="services__sub-title">Swimming Pool</h3>
+                    <svg class="services__icon" width="55" height="53">
+                        <use xlink:href="./images/sprite.svg#icon-swimming"></use>
+                    </svg>
+                </div>
+                <p class="services__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__top">
+                    <h3 class="services__sub-title">Fibre Internet</h3>
+                    <svg class="services__icon" width="55" height="50">
+                        <use xlink:href="./images/sprite.svg#icon-fibre"></use>
+                    </svg>
+                </div>
+                <p class="services__text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page.
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__top">
+                    <h3 class="services__sub-title">Breakfast</h3>
+                    <svg class="services__icon" width="55" height="50">
+                        <use xlink:href="./images/sprite.svg#icon-breakfast"></use>
+                    </svg>
+                </div>
+                <p class="services__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+            <section class="progress section">
+    <div class="container">
+        <h2 class="sr-only">Our progress</h2>
+        <ul class="progress__list">
+            <li class="progress__item">
+                <b class="progress__value">302+</b>
+                <span class="progress__name">Room & Suites</span>
+            </li>
+            <li class="progress__item">
+                <b class="progress__value">25</b>
+                <span class="progress__name">Restaurant</span>
+            </li>
+            <li class="progress__item">
+                <b class="progress__value">510+</b>
+                <span class="progress__name">Exceptional Food</span>
+            </li>
+            <li class="progress__item">
+                <b class="progress__value">65</b>
+                <span class="progress__name">Destination</span>
+            </li>
+        </ul>
+    </div>
+</section>
+            <section class="history section">
+    <div class="container">
+        <div class="history__inner">
+            <div class="history__content">
+                <h2 class="history__title title">
+                    Discover Our History
+                </h2>
+                <div class="history__text">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy.
+                    </p>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                </div>
+                <div class="history__btns">
+                    <a class="history__link btn" href="#">Explore More</a>
+                    <a class="history__link-watch btn-play" href="#">
+                        <span class="btn-play__circel-play">
+                            <svg class="btn-play__icon-play" width="12" height="20">
+                                <use xlink:href="./images/sprite.svg#icon-play"></use>
+                            </svg>
+                        </span>
+                        Watch video
+                    </a>
+                </div>
+            </div>
+            <a class="history__image" href="#">
+                <span class="sr-only">Video of our success story</span>
+                <span class="history__circel-play">
+                    <svg class="history__icon-play" width="30" height="30">
+                        <use xlink:href="./images/sprite.svg#icon-play"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+            <section class="customers section">
+    <div class="container">
+        <div class="customers__heading">
+            <h2 class="customers__title title">Our Happy Customers</h2>
+            <p class="customers__section-description">
+                Know about our clients, we are a woldwide corporate brand
+            </p>
+        </div>
+
+        <div class="customers__row">
+
+            <blockquote class="customers__item">
+                <div class="customers__avatar">
+                    <img class="customers__avatar-img" src="./images/customers/wade.png" width="80" height="75"
+                        alt="img">
+                </div>
+                <cite class="customers__name">Wade Warren</cite>
+                <span class="customers__work">Louis Vuitton</span>
+                <p class="customers__text">
+                    Necessary to deliver white glove,
+                    fully managed campaigns that surpass
+                    industry benchmarks.Take your career
+                    to next level.
+                </p>
+            </blockquote>
+
+            <blockquote class="customers__item">
+                <div class="customers__avatar">
+                    <img class="customers__avatar-img" src="./images/customers/vince.png" width="80" height="75"
+                        alt="img">
+                </div>
+                <cite class="customers__name">Albert Florise</cite>
+                <span class="customers__work">Nintendo</span>
+                <p class="customers__text">
+                    Necessary to deliver white glove,
+                    fully managed campaigns that surpass
+                    industry benchmarks.Take your career
+                    to next level.
+                </p>
+            </blockquote>
+
+            <blockquote class="customers__item">
+                <div class="customers__avatar">
+                    <img class="customers__avatar-img" src="./images/customers/jenny.png" width="80" height="75"
+                        alt="img">
+                </div>
+                <cite class="customers__name">Jenny Wilson</cite>
+                <span class="customers__work">Bank of America</span>
+                <p class="customers__text">
+                    Necessary to deliver white glove,
+                    fully managed campaigns that surpass
+                    industry benchmarks.Take your career
+                    to next level.
+                </p>
+            </blockquote>
+
+
+        </div>
+
+
+    </div>
+</section>
+            <section class="blog section">
+    <div class="container">
+        <div class="blog__heading">
+            <span class="blog__section-description">hotel blog</span>
+            <h2 class="blog__title title">Our News</h2>
+        </div>
+        <div class="blog__cards">
+            <article class="card-blog">
+                <a class="card-blog__image" href="#">
+                    <img class="card-blog__img" src="./images/blog/1.jpg" width="350" height="316" alt="img">
+                </a>
+                <div class="card-blog__body">
+                    <div class="card-blog__row">
+                        <div class="card-blog__col">
+                            <svg class="card-blog__icon" width="20" height="20">
+                                <use xlink:href="./images/sprite.svg#icon-travel"></use>
+                            </svg>
+                            Travel
+                        </div>
+                        <div class="card-blog__col">
+                            <svg class="card-blog__icon" width="20" height="16">
+                                <use xlink:href="./images/sprite.svg#icon-comment"></use>
+                            </svg>
+                            2 Comment
+                        </div>
+                    </div>
+                    <h3 class="card-blog__title">How To Travel With Map</h3>
+                    <p class="card-blog__text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <a class="card-blog__link-more" href="#">
+                        Read More
+                        <svg class="card-blog__icon-arrow" width="22" height="10">
+                            <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            <article class="card-blog">
+                <a class="card-blog__image" href="#">
+                    <img class="card-blog__img" src="./images/blog/2.jpg" width="350" height="316" alt="img">
+                </a>
+                <div class="card-blog__body">
+                    <div class="card-blog__row">
+                        <div class="card-blog__col">
+                            <svg class="card-blog__icon" width="20" height="20">
+                                <use xlink:href="./images/sprite.svg#icon-travel"></use>
+                            </svg>
+                            Travel
+                        </div>
+                        <div class="card-blog__col">
+                            <svg class="card-blog__icon" width="20" height="16">
+                                <use xlink:href="./images/sprite.svg#icon-comment"></use>
+                            </svg>
+                            2 Comment
+                        </div>
+                    </div>
+                    <h3 class="card-blog__title">Single Contrast Room</h3>
+                    <p class="card-blog__text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <a class="card-blog__link-more" href="#">
+                        Read More
+                        <svg class="card-blog__icon-arrow" width="22" height="10">
+                            <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            <article class="card-blog">
+                <a class="card-blog__image" href="#">
+                    <img class="card-blog__img" src="./images/blog/3.jpg" width="350" height="316" alt="img">
+                </a>
+                <div class="card-blog__body">
+                    <div class="card-blog__row">
+                        <div class="card-blog__col">
+                            <svg class="card-blog__icon" width="20" height="20">
+                                <use xlink:href="./images/sprite.svg#icon-travel"></use>
+                            </svg>
+                            Travel
+                        </div>
+                        <div class="card-blog__col">
+                            <svg class="card-blog__icon" width="20" height="16">
+                                <use xlink:href="./images/sprite.svg#icon-comment"></use>
+                            </svg>
+                            2 Comment
+                        </div>
+                    </div>
+                    <h3 class="card-blog__title">Luxery Twin Room</h3>
+                    <p class="card-blog__text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <a class="card-blog__link-more" href="#">
+                        Read More
+                        <svg class="card-blog__icon-arrow" width="22" height="10">
+                            <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+            <section class="subscribe section">
+    <div class="container">
+        <div class="subscribe__inner">
+            <span class="subscribe__section-description">Stay in Touch</span>
+            <h2 class="subscribe__title title">
+                Signup to receive news and updates from our hotel.
+            </h2>
+            <form class="form-subscribe">
+                <input class="form-subscribe__input" type="email" placeholder="Enter Your Email Address">
+                <button class="form-subscribe__submit" type="submit">subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+            <section class="contacts section">
+
+    <div class="contacts__inner">
+        <div class="contacts__item">
+            <a class="contacts__logo logo" href="#">
+                <img class="logo__img" src="./images/logo.png" width="30" height="46" alt="logo">
+                <span class="logo__text">hotel</span>
+            </a>
+            <p class="contacts__text">
+                Itawa is a responsive real estate landing page template.Itawa is a landing page template.Itawa
+                template.
+            </p>
+        </div>
+        <div class="contacts__item">
+            <h3 class="contacts__sub-title">Contact Us</h3>
+            <address class="contacts__address">
+                <p class="contacts__address-item">
+                    <svg class="contacts__icon-address" width="13" height="18">
+                        <use xlink:href="./images/sprite.svg#icon-location"></use>
+                    </svg>
+                    123 Business Centre London SW1A 1AA
+                </p>
+                <p class="contacts__address-item">
+                    <svg class="contacts__icon-address" width="16" height="15">
+                        <use xlink:href="./images/sprite.svg#icon-tel"></use>
+                    </svg>
+                    +1 0000 000 00
+                </p>
+                <p class="contacts__address-item">
+                    <svg class="contacts__icon-address" width="17" height="11">
+                        <use xlink:href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    info@businessname.com
+                </p>
+                <div class="contacts__messager">
+                    <a class="contacts__messager-item" href="#"
+                        style="background-image: url('./images/icons/icon-facebook.svg');">
+                        <span class="sr-only">facebook</span>
+                    </a>
+                    <a class="contacts__messager-item" href="#"
+                        style="background-image: url('./images/icons/icon-instagram.svg');">
+                        <span class="sr-only">instagram</span>
+                    </a>
+                    <a class="contacts__messager-item" href="#"
+                        style="background-image: url('./images/icons/icon-twitter.svg');">
+                        <span class="sr-only">twitter</span>
+                    </a>
+                </div>
+            </address>
+        </div>
+        <div class="contacts__item contacts__item--messager">
+            <h3 class="contacts__sub-title">Follow Us</h3>
+            <div class="contacts__messager">
+                <a class="contacts__messager-item" href="#"
+                    style="background-image: url('./images/icons/icon-facebook.svg');">
+                    <span class="sr-only">facebook</span>
+                </a>
+                <a class="contacts__messager-item" href="#"
+                    style="background-image: url('./images/icons/icon-instagram.svg');">
+                    <span class="sr-only">instagram</span>
+                </a>
+                <a class="contacts__messager-item" href="#"
+                    style="background-image: url('./images/icons/icon-twitter.svg');">
+                    <span class="sr-only">twitter</span>
+                </a>
+            </div>
+            <p class="contacts__text">
+                Itawa is a responsive real estate landing page template.Itawa is a landing page template.Itawa
+                template.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+        </main>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <span class="footer__text-left">©HOTEL Official 2022</span>
+            <span class="footer__text-right">
+                Privacy policy Cookies Terms of service
+            </span>
+        </div>
+    </div>
+</footer>
+    </div>
+   
+
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

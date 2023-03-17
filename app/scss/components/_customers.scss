@@ -1,0 +1,67 @@
+.customers {
+
+    &__heading {
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        margin-bottom: 13px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 350px;
+        background-color: $blue-100;
+        padding: 50px 37px;
+        transition: background-color 0.5s, color 0.5s;
+
+        &:hover {
+            background-color: $blue-500;
+            color: $white;
+
+            .customers__name {
+                color: $white;
+            }
+        }
+    }
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 80px;
+        height: 80px;
+        background-color: $white;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    &__name {
+        font-family: $font-cite;
+        font-size: 30px;
+        font-weight: 500;
+        color: $h3-clr;
+        margin-bottom: 6px;
+        transition: color 0.5s
+    }
+
+    &__work {
+        display: block;
+        font-family: $font-cite;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-family: $font-quet;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

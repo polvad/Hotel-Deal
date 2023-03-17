@@ -1,0 +1,134 @@
+.subscribe {
+
+    &__inner {
+        padding: 73px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $blue-500;
+        border-radius: 10px;
+        background-image: url('../images/decor.png'), url('../images/decor.png');
+        background-repeat: no-repeat;
+        background-size: 100px 100px, 70px 70px;
+        background-position: 10px 97%, 99% 10px;
+    }
+
+    &__section-description {
+        color: $white;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        max-width: 530px;
+        font-size: 40px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+}
+
+.form-subscribe {
+    position: relative;
+    max-width: 446px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__input {
+        width: 100%;
+        font-family: $font-title;
+        font-size: 14px;
+        color: #A1A1A1;
+        background-color: $white;
+        box-shadow: 0 2px 12px rgba(52, 52, 52, 0.15);
+        border-radius: 6px;
+        padding: 13px 110px 13px 20px;
+
+        &:focus {
+            outline: transparent;
+
+            &::placeholder {
+                color: $black;
+            }
+        }
+    }
+
+    &__submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 16px;
+        padding: 12px 15px;
+        box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        background-color: $blue-800;
+        color: white;
+        letter-spacing: 1px;
+
+        &:hover {
+            background-color: lighten($blue-800, 10);
+        }
+
+        &:focus {
+            background-color: darken($blue-800, 10);
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .subscribe {
+        &__inner {
+            padding: 50px;
+            background-size: 80px 80px, 50px 50px;
+
+        }
+
+        &__section-description {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .form-subscribe {
+        max-width: 320px;
+
+        &__input {
+            padding: 10px 100px 10px 15px;
+        }
+
+        &__submit {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .subscribe {
+        &__inner {
+            padding: 50px 20px;
+        }
+
+        &__title {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .form-subscribe {
+        max-width: 320px;
+
+        &__input {
+            padding: 10px 110px 10px 15px;
+        }
+
+        &__submit {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+    }
+}

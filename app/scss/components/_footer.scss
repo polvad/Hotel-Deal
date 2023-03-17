@@ -1,0 +1,41 @@
+.footer {
+    background-color: $blue-500;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 5px;
+        padding: 17px 0;
+    }
+
+    &__text-left {
+        font-family: $font-cite;
+        font-weight: 500;
+    }
+
+    &__text-right {
+        font-family: $font-title;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer {
+        &__inner {
+            padding: 10px 0;
+        }
+
+        &__text-left {
+            font-size: 14px;
+        }
+
+        &__text-right {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    }
+}

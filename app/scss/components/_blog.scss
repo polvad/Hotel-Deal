@@ -1,0 +1,131 @@
+.blog {
+
+    &__heading {
+        margin-bottom: 45px;
+    }
+
+    &__section-description {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+    }
+}
+
+.card-blog {
+
+    &__image {
+        display: block;
+        background-color: $blue-500;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__body {
+        border: 1px solid $card-content-border;
+        border-top: none;
+        padding: 20px 26px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 75px;
+        row-gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__col {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+        font-family: $font-title;
+        color: #797979;
+    }
+
+    &__icon {
+        fill: #DA8907;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+
+    &__link-more {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #596B86;
+
+        &:hover {
+            color: $blue-800;
+
+            .card-blog__icon-arrow {
+                transform: translateX(5px);
+                fill: $blue-800;
+            }
+        }
+    }
+
+    &__icon-arrow {
+        transition: transform 0.5s, fill 0.5s;
+    }
+
+}
+
+
+@media(max-width: 576px) {
+    .blog {
+        &__heading {
+            margin-bottom: 35px;
+        }
+
+        &__section-description {
+            font-size: 14px;
+        }
+    }
+
+    .card-blog {
+        &__img {
+            height: 200px;
+        }
+
+        &__body {
+            padding: 15px;
+        }
+
+        &__col {
+            font-size: 12px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__link-more {
+            font-size: 16px;
+        }
+    }
+}
